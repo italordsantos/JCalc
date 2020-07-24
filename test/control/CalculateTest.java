@@ -96,7 +96,7 @@ public class CalculateTest {
     /**
      * Test of porcentagem method, of class Calculate.
      */
-    @org.junit.Test
+    @Test
     public void testPorcentagem() {
         System.out.println("porcentagem");
         double porcentagem = 50.0;
@@ -109,7 +109,7 @@ public class CalculateTest {
     /**
      * Test of porcentagemDeX method, of class Calculate.
      */
-    @org.junit.Test
+    @Test
     public void testPorcentagemDeX() {
         System.out.println("porcentagemDeX");
         double porcentagem = 50.0;

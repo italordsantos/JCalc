@@ -43,10 +43,6 @@ public class Calculate {
         return porcentagemDeX(porcentagem, valor) - valor;
     }
 
-    public double porcentagemMultiplicando(double porcentagem, double valor) {
-        return porcentagemDeX(porcentagem, valor) * valor;
-    }
-
     public double porcentagemDividindo(double porcentagem, double valor) {
         return porcentagemDeX(porcentagem, valor) / valor;
     }
