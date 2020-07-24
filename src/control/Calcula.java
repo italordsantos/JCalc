@@ -28,7 +28,7 @@ public class Calcula {
     }
     
     public double calculaPorcentagem(double porcentagem, double valor) {
-        return porcentagem / 100 * valor;
+        return porcentagem / 100;
     }
     
     public double calculaPorcentagemIncrementando(double porcentagem, double valor) {
@@ -41,5 +41,9 @@ public class Calcula {
     
     public double calculaPorcentagemMultiplicando(double porcentagem, double valor) {
         return calculaPorcentagem(porcentagem, valor) * valor;
+    }
+    
+    public double calculaPorcentagemDividindo(double porcentagem, double valor) {
+        return calculaPorcentagem(porcentagem, valor) / valor;
     }
 }
