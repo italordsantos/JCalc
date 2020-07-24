@@ -40,6 +40,6 @@ public class Calculate {
     }
 
     public double raizQuadrada(double raiz) {
-        return Math.pow(raiz, 2);
+        return Math.sqrt(raiz);
     }
 }

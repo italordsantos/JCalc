@@ -134,4 +134,17 @@ public class CalculateTest {
         double result = instance.porcentagemIncrementando(porcentagem, valor);
         assertEquals(expResult, result, 0.0);
     }
+    
+    /**
+     * Test of raizQuadrada method, of class Calculate.
+     */
+    @Test
+    public void testRaizQuadrada() {
+        System.out.println("raizQuadrada");
+        double valor = 4.0;
+        Calculate instance = new Calculate();
+        double expResult = 2.0;
+        double result = instance.raizQuadrada(valor);
+        assertEquals(expResult, result, 0.0);
+    }
 }
