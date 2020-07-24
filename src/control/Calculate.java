@@ -10,44 +10,41 @@ package control;
  * @author italo
  */
 public class Calculate {
-    
-    public double calculaSomar(double n1, double n2) {
+
+    public double somar(double n1, double n2) {
         return n1 + n2;
     }
-    
-    public double calculaSubtrair(double n1, double n2) {
+
+    public double subtrair(double n1, double n2) {
         return n1 - n2;
     }
-    
-    public double calculaMultiplicar(double n1, double n2) {
+
+    public double multiplicar(double n1, double n2) {
         return n1 * n2;
     }
-    
-    public double calculaDividir(double n1, double n2) {
+
+    public double dividir(double n1, double n2) {
         return n1 / n2;
     }
-    
-    public double calculaPorcentagem(double porcentagem, double valor) {
+
+    public double porcentagem(double porcentagem, double valor) {
         return porcentagem / 100;
     }
-    
-    public double calculaPorcentagemIncrementando(double porcentagem, double valor) {
-        return calculaPorcentagem(porcentagem, valor) + valor;
+
+    public double porcentagemIncrementando(double porcentagem, double valor) {
+        return porcentagem(porcentagem, valor) + valor;
     }
-    
-    public double calculaPorcentagemDecrementando(double porcentagem, double valor) {
-        return calculaPorcentagem(porcentagem, valor) - valor;
+
+    public double porcentagemDecrementando(double porcentagem, double valor) {
+        return porcentagem(porcentagem, valor) - valor;
     }
-    
-    public double calculaPorcentagemMultiplicando(double porcentagem, double valor) {
-        return calculaPorcentagem(porcentagem, valor) * valor;
+
+    public double porcentagemMultiplicando(double porcentagem, double valor) {
+        return porcentagem(porcentagem, valor) * valor;
     }
-    
-    public double calculaPorcentagemDividindo(double porcentagem, double valor) {
-        return calculaPorcentagem(porcentagem, valor) / valor;
+
+    public double porcentagemDividindo(double porcentagem, double valor) {
+        return porcentagem(porcentagem, valor) / valor;
     }
-    
-    public double calculaRaizQuadrada(double raiz) {
-        return Math.pow(raiz, 2);
-    }
+
 }
