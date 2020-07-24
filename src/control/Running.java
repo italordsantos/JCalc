@@ -16,8 +16,6 @@ public class Running {
     
     public static void main(String[] args) {
         new JCalc().setVisible(true);
-        System.out.println(a);
     }
     
-    public static String a;
 }

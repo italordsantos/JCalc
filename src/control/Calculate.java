@@ -9,7 +9,7 @@ package control;
  *
  * @author italo
  */
-public class Calcula {
+public class Calculate {
     
     public double calculaSomar(double n1, double n2) {
         return n1 + n2;
@@ -45,5 +45,9 @@ public class Calcula {
     
     public double calculaPorcentagemDividindo(double porcentagem, double valor) {
         return calculaPorcentagem(porcentagem, valor) / valor;
+    }
+    
+    public double calculaRaizQuadrada(double raiz) {
+        return Math.pow(raiz, 2);
     }
 }
