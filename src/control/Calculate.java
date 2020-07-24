@@ -47,4 +47,7 @@ public class Calculate {
         return porcentagem(porcentagem, valor) / valor;
     }
 
+    public double raizQuadrada(double raiz) {
+        return Math.pow(raiz, 2);
+    }    
 }
