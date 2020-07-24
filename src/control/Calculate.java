@@ -27,27 +27,31 @@ public class Calculate {
         return n1 / n2;
     }
 
-    public double porcentagem(double porcentagem, double valor) {
+    public double porcentagem(double porcentagem) {
         return porcentagem / 100;
     }
 
+    public double porcentagemDeX(double porcentagem, double valor) {
+        return porcentagem(porcentagem) * valor;
+    }
+    
     public double porcentagemIncrementando(double porcentagem, double valor) {
-        return porcentagem(porcentagem, valor) + valor;
+        return porcentagemDeX(porcentagem, valor) + valor;
     }
 
     public double porcentagemDecrementando(double porcentagem, double valor) {
-        return porcentagem(porcentagem, valor) - valor;
+        return porcentagemDeX(porcentagem, valor) - valor;
     }
 
     public double porcentagemMultiplicando(double porcentagem, double valor) {
-        return porcentagem(porcentagem, valor) * valor;
+        return porcentagemDeX(porcentagem, valor) * valor;
     }
 
     public double porcentagemDividindo(double porcentagem, double valor) {
-        return porcentagem(porcentagem, valor) / valor;
+        return porcentagemDeX(porcentagem, valor) / valor;
     }
 
     public double raizQuadrada(double raiz) {
         return Math.pow(raiz, 2);
-    }    
+    }
 }
