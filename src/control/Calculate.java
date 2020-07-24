@@ -39,14 +39,6 @@ public class Calculate {
         return porcentagemDeX(porcentagem, valor) + valor;
     }
 
-    public double porcentagemDecrementando(double porcentagem, double valor) {
-        return porcentagemDeX(porcentagem, valor) - valor;
-    }
-
-    public double porcentagemDividindo(double porcentagem, double valor) {
-        return porcentagemDeX(porcentagem, valor) / valor;
-    }
-
     public double raizQuadrada(double raiz) {
         return Math.pow(raiz, 2);
     }

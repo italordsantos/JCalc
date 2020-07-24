@@ -5,6 +5,7 @@
  */
 package control;
 
+import java.math.MathContext;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,22 +18,22 @@ import org.junit.Test;
  * @author italo
  */
 public class CalculateTest {
-    
+
     public CalculateTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -105,7 +106,7 @@ public class CalculateTest {
         double result = instance.porcentagem(porcentagem);
         assertEquals(expResult, result, 0.0);
     }
-    
+
     /**
      * Test of porcentagemDeX method, of class Calculate.
      */
@@ -120,4 +121,17 @@ public class CalculateTest {
         assertEquals(expResult, result, 0.0);
     }
 
+    /**
+     * Test of porcentagemIncrementando method, of class Calculate.
+     */
+    @Test
+    public void testPorcentagemIncrementando() {
+        System.out.println("porcentagemIncrementando");
+        double porcentagem = 50.0;
+        double valor = 20.0;
+        Calculate instance = new Calculate();
+        double expResult = 30.0;
+        double result = instance.porcentagemIncrementando(porcentagem, valor);
+        assertEquals(expResult, result, 0.0);
+    }
 }
