@@ -5,11 +5,18 @@
  */
 package view.jinternalframe.calculator;
 
+import control.Calculate;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author italo
  */
 public class SimpleCalculator extends javax.swing.JInternalFrame {
+
+    private final Calculate CALC = new Calculate();
+    private double valorUm;
+    private String operacao;
 
     /**
      * Creates new form JInternalFrameSimpleCalculator
@@ -17,9 +24,64 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
     public SimpleCalculator() {
         initComponents();
     }
-    
-    private void adicionaValor(String valor) {
-        jlbValorDigitadoUm.setText(jlbValorDigitadoUm.getText() + valor);
+
+    private void fazOperacao(String simbolo) {
+        switch (operacao) {
+            case "+":
+                jtfValorDois.setText(CALC.somar(valorUm, Double.parseDouble(jtfValorUm.getText())) + "");
+                jtfValorUm.setText("");
+                break;
+            case "-":
+                break;
+            case "*":
+                break;
+            case "/":
+                break;
+            default:
+                JOptionPane.showMessageDialog(this, "Operacao invalida");
+        }
+    }
+
+    private void adicionaOperacao(String simbolo) {
+        
+        
+        
+        
+        
+        
+        if (jtfValorDois.getText().isEmpty()) {
+            operacao = simbolo;
+            valorUm = Double.parseDouble(jtfValorUm.getText());
+            jtfValorDois.setText(jtfValorUm.getText() + operacao);
+            jtfValorUm.setText("");
+        } else {
+            fazOperacao(simbolo);
+        }
+    }
+
+    private void adicionaPonto() {
+        if (!jtfValorUm.getText().contains(".")) {
+            concatenaNoUm(".");
+        }
+    }
+
+    private void adicionaNumero(String valor) {
+        concatenaNoUm(valor);
+    }
+
+    private void clearEnd() {
+        if (!jtfValorUm.getText().isEmpty()) {
+            jtfValorUm.setText(jtfValorUm.getText().substring(0, jtfValorUm.getText().length() - 1));
+        }
+    }
+
+    private void clearAll() {
+        jtfValorUm.setText("");
+        jtfValorDois.setText("");
+    }
+
+    private void concatenaNoUm(String string) {
+        jtfValorUm.setText(jtfValorUm.getText() + string);
     }
 
     /**
@@ -31,8 +93,6 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jlbValorDigitadoDois = new javax.swing.JLabel();
-        jlbValorDigitadoUm = new javax.swing.JLabel();
         btnLimparTudo = new javax.swing.JButton();
         btnLimparCaractere = new javax.swing.JButton();
         btnRaizQuadrada = new javax.swing.JButton();
@@ -53,25 +113,29 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
         btnPonto = new javax.swing.JButton();
         btnIgual = new javax.swing.JButton();
         btnSoma = new javax.swing.JButton();
+        jtfValorUm = new javax.swing.JTextField();
+        jtfValorDois = new javax.swing.JTextField();
 
         setClosable(true);
         setTitle("Simple calculate");
 
-        jlbValorDigitadoDois.setFont(new java.awt.Font("Arimo", 1, 12)); // NOI18N
-        jlbValorDigitadoDois.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jlbValorDigitadoDois.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 0, 0, new java.awt.Color(0, 0, 0)));
-
-        jlbValorDigitadoUm.setFont(new java.awt.Font("Arimo", 1, 14)); // NOI18N
-        jlbValorDigitadoUm.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jlbValorDigitadoUm.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 1, new java.awt.Color(0, 0, 0)));
-
         btnLimparTudo.setFont(new java.awt.Font("Arimo", 1, 14)); // NOI18N
         btnLimparTudo.setText("CA");
         btnLimparTudo.setRolloverEnabled(false);
+        btnLimparTudo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimparTudoActionPerformed(evt);
+            }
+        });
 
         btnLimparCaractere.setFont(new java.awt.Font("Arimo", 1, 14)); // NOI18N
         btnLimparCaractere.setText("C");
         btnLimparCaractere.setRolloverEnabled(false);
+        btnLimparCaractere.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimparCaractereActionPerformed(evt);
+            }
+        });
 
         btnRaizQuadrada.setFont(new java.awt.Font("Arimo", 1, 14)); // NOI18N
         btnRaizQuadrada.setText("√");
@@ -186,6 +250,11 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
         btnPonto.setFont(new java.awt.Font("Arimo", 1, 14)); // NOI18N
         btnPonto.setText(".");
         btnPonto.setRolloverEnabled(false);
+        btnPonto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPontoActionPerformed(evt);
+            }
+        });
 
         btnIgual.setFont(new java.awt.Font("Arimo", 1, 14)); // NOI18N
         btnIgual.setText("=");
@@ -194,6 +263,19 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
         btnSoma.setFont(new java.awt.Font("Arimo", 1, 14)); // NOI18N
         btnSoma.setText("+");
         btnSoma.setRolloverEnabled(false);
+        btnSoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSomaActionPerformed(evt);
+            }
+        });
+
+        jtfValorUm.setEditable(false);
+        jtfValorUm.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        jtfValorUm.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 1, new java.awt.Color(0, 0, 0)));
+
+        jtfValorDois.setEditable(false);
+        jtfValorDois.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        jtfValorDois.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 0, 0, new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -201,9 +283,11 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jlbValorDigitadoUm, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jtfValorUm)
+                    .addComponent(jtfValorDois)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnLimparTudo, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnSete, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -230,17 +314,16 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
                             .addComponent(btndividir, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnVezes, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jlbValorDigitadoDois, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btnSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jlbValorDigitadoDois, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtfValorDois, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jlbValorDigitadoUm, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtfValorUm, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLimparTudo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -279,53 +362,73 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
 
     private void btnNumeroZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNumeroZeroActionPerformed
         // TODO add your handling code here:
-        adicionaValor("0");
+        adicionaNumero("0");
     }//GEN-LAST:event_btnNumeroZeroActionPerformed
 
     private void btnUmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUmActionPerformed
         // TODO add your handling code here:
-        adicionaValor("1");
+        adicionaNumero("1");
     }//GEN-LAST:event_btnUmActionPerformed
 
     private void btnDoisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDoisActionPerformed
         // TODO add your handling code here:
-        adicionaValor("2");
+        adicionaNumero("2");
     }//GEN-LAST:event_btnDoisActionPerformed
 
     private void btnTresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTresActionPerformed
         // TODO add your handling code here:
-        adicionaValor("3");
+        adicionaNumero("3");
     }//GEN-LAST:event_btnTresActionPerformed
 
     private void btnQuatroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuatroActionPerformed
         // TODO add your handling code here:
-        adicionaValor("4");
+        adicionaNumero("4");
     }//GEN-LAST:event_btnQuatroActionPerformed
 
     private void btnCincoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCincoActionPerformed
         // TODO add your handling code here:
-        adicionaValor("5");
+        adicionaNumero("5");
     }//GEN-LAST:event_btnCincoActionPerformed
 
     private void btnSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeisActionPerformed
         // TODO add your handling code here:
-        adicionaValor("6");
+        adicionaNumero("6");
     }//GEN-LAST:event_btnSeisActionPerformed
 
     private void btnSeteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSeteActionPerformed
         // TODO add your handling code here:
-        adicionaValor("7");
+        adicionaNumero("7");
     }//GEN-LAST:event_btnSeteActionPerformed
 
     private void btnOitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOitoActionPerformed
         // TODO add your handling code here:
-        adicionaValor("8");
+        adicionaNumero("8");
     }//GEN-LAST:event_btnOitoActionPerformed
 
     private void btnNoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNoveActionPerformed
         // TODO add your handling code here:
-        adicionaValor("9");
+        adicionaNumero("9");
     }//GEN-LAST:event_btnNoveActionPerformed
+
+    private void btnLimparTudoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparTudoActionPerformed
+        // TODO add your handling code here:
+        clearAll();
+    }//GEN-LAST:event_btnLimparTudoActionPerformed
+
+    private void btnLimparCaractereActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparCaractereActionPerformed
+        // TODO add your handling code here:
+        clearEnd();
+    }//GEN-LAST:event_btnLimparCaractereActionPerformed
+
+    private void btnPontoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPontoActionPerformed
+        // TODO add your handling code here:
+        adicionaPonto();
+    }//GEN-LAST:event_btnPontoActionPerformed
+
+    private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
+        // TODO add your handling code here:
+        adicionaOperacao("+");
+    }//GEN-LAST:event_btnSomaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -349,7 +452,7 @@ public class SimpleCalculator extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnUm;
     private javax.swing.JButton btnVezes;
     private javax.swing.JButton btndividir;
-    private javax.swing.JLabel jlbValorDigitadoDois;
-    private javax.swing.JLabel jlbValorDigitadoUm;
+    private javax.swing.JTextField jtfValorDois;
+    private javax.swing.JTextField jtfValorUm;
     // End of variables declaration//GEN-END:variables
 }
