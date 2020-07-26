@@ -27,39 +27,47 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jtfValorUm" max="32767" attributes="0"/>
-                  <Component id="jtfValorDois" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnLimparTudo" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnSete" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnQuatro" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnUm" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnNumeroZero" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnLimparCaractere" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnOito" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnCinco" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnDois" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnPonto" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnRaizQuadrada" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnNove" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnSeis" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnTres" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnIgual" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnPorcentagem" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btndividir" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnVezes" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnMenos" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btnSoma" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnLimparTudo" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnSete" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnQuatro" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnUm" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnNumeroZero" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnLimparCaractere" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnOito" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnCinco" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnDois" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnPonto" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnRaizQuadrada" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnNove" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnSeis" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnTres" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnIgual" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btnPorcentagem" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btndividir" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnVezes" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnMenos" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="btnSoma" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jtfValorDois" min="-2" pref="214" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jtfOperacao" min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
@@ -71,7 +79,10 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jtfValorDois" min="-2" pref="30" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jtfValorDois" pref="30" max="32767" attributes="0"/>
+                  <Component id="jtfOperacao" max="32767" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jtfValorUm" min="-2" pref="50" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -121,6 +132,7 @@
           <Font name="Arimo" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="CA"/>
+        <Property name="toolTipText" type="java.lang.String" value="Clear All"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
@@ -132,7 +144,8 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arimo" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="C"/>
+        <Property name="text" type="java.lang.String" value="CE"/>
+        <Property name="toolTipText" type="java.lang.String" value="Clear End"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
       <Events>
@@ -147,6 +160,9 @@
         <Property name="text" type="java.lang.String" value="&#x221a;"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRaizQuadradaActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnPorcentagem">
       <Properties>
@@ -156,6 +172,9 @@
         <Property name="text" type="java.lang.String" value="%"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPorcentagemActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSete">
       <Properties>
@@ -201,6 +220,9 @@
         <Property name="text" type="java.lang.String" value="/"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btndividirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnQuatro">
       <Properties>
@@ -246,6 +268,9 @@
         <Property name="text" type="java.lang.String" value="x"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVezesActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnUm">
       <Properties>
@@ -291,6 +316,9 @@
         <Property name="text" type="java.lang.String" value="-"/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenosActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnNumeroZero">
       <Properties>
@@ -324,6 +352,9 @@
         <Property name="text" type="java.lang.String" value="="/>
         <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIgualActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSoma">
       <Properties>
@@ -355,6 +386,16 @@
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
             <MatteColorBorder bottom="0" left="1" right="0" top="1"/>
+          </Border>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jtfOperacao">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="1" left="1" right="0" top="0"/>
           </Border>
         </Property>
       </Properties>
