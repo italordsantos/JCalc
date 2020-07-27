@@ -85,15 +85,19 @@ public class JCalc extends javax.swing.JFrame {
         jToolBar1.add(filler1);
 
         jpConversor.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Conversor"));
+        jpConversor.setEnabled(false);
 
         jButton5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton5.setText("Distância");
+        jButton5.setEnabled(false);
 
         jButton6.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton6.setText("Moeda");
+        jButton6.setEnabled(false);
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton4.setText("Tempo");
+        jButton4.setEnabled(false);
 
         javax.swing.GroupLayout jpConversorLayout = new javax.swing.GroupLayout(jpConversor);
         jpConversor.setLayout(jpConversorLayout);
@@ -123,18 +127,23 @@ public class JCalc extends javax.swing.JFrame {
         jToolBar1.add(filler2);
 
         jpFigurasGeometricas.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Algebra euclidiana"));
+        jpFigurasGeometricas.setEnabled(false);
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton3.setText("Quadrado");
+        jButton3.setEnabled(false);
 
         jButton7.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton7.setText("Retângulo");
+        jButton7.setEnabled(false);
 
         jButton8.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton8.setText("Triângulo");
+        jButton8.setEnabled(false);
 
         jButton9.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton9.setText("Pontos");
+        jButton9.setEnabled(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
