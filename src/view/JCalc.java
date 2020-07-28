@@ -85,7 +85,6 @@ public class JCalc extends javax.swing.JFrame {
         jToolBar1.add(filler1);
 
         jpConversor.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Conversor"));
-        jpConversor.setEnabled(false);
 
         jButton5.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton5.setText("Distância");
@@ -97,7 +96,6 @@ public class JCalc extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton4.setText("Tempo");
-        jButton4.setEnabled(false);
 
         javax.swing.GroupLayout jpConversorLayout = new javax.swing.GroupLayout(jpConversor);
         jpConversor.setLayout(jpConversorLayout);

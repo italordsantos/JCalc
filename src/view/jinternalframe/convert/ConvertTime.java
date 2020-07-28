@@ -27,23 +27,318 @@ public class ConvertTime extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jtfMilessegundo = new javax.swing.JTextField();
+        jtfSegundo = new javax.swing.JTextField();
+        jtfMinuto = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jtfHora = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jtfDia = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jtfSemana = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jtfMes = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        jtfAno = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jtfDataInicial = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jtfDataFinal = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jtfDataDiferenca = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jtfDataDiaSemana = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+
         setTitle("Convert time");
+
+        jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
+
+        jLabel3.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel3.setText("Minuto:");
+
+        jtfMilessegundo.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        jtfSegundo.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        jtfMinuto.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel1.setText("Milissegundo:");
+
+        jLabel2.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel2.setText("Segundo:");
+
+        jLabel9.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel9.setText("Hora:");
+
+        jtfHora.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        jLabel11.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel11.setText("Dia:");
+
+        jtfDia.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        jLabel12.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel12.setText("Semana:");
+
+        jtfSemana.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        jLabel13.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel13.setText("Mês");
+
+        jtfMes.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        jLabel14.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel14.setText("Ano");
+
+        jtfAno.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(83, 83, 83)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jtfAno)
+                    .addComponent(jtfMes)
+                    .addComponent(jtfSemana)
+                    .addComponent(jtfDia)
+                    .addComponent(jtfHora)
+                    .addComponent(jtfMinuto, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jtfSegundo, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jtfMilessegundo, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(133, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jtfMilessegundo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jtfSegundo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jtfMinuto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jtfHora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(jtfDia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(jtfSemana, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jtfMes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(jtfAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(89, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Tempo", jPanel2);
+
+        jLabel5.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel5.setText("é uma");
+
+        jtfDataInicial.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jtfDataInicial.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jtfDataInicial.setText("12/04/2000");
+        jtfDataInicial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfDataInicialActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel4.setText("Data final:");
+
+        jtfDataFinal.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jtfDataFinal.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jtfDataFinal.setText("12/04/2020");
+        jtfDataFinal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfDataFinalActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("=");
+
+        jtfDataDiferenca.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jtfDataDiferenca.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jtfDataDiferenca.setText("12/04/2000");
+        jtfDataDiferenca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfDataDiferencaActionPerformed(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel7.setText("Diferença:");
+
+        jLabel8.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel8.setText("Data inicial:");
+
+        jtfDataDiaSemana.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
+        jtfDataDiaSemana.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jtfDataDiaSemana.setText("12/04/2000");
+        jtfDataDiaSemana.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtfDataDiaSemanaActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setFont(new java.awt.Font("Arimo", 0, 14)); // NOI18N
+        jLabel10.setText("SEGUNDA-FEIRA");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jtfDataInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(jLabel8)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jtfDataFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel6))
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel7)
+                            .addComponent(jtfDataDiferenca, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jtfDataDiaSemana, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel10)))
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jtfDataInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtfDataFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6)
+                    .addComponent(jtfDataDiferenca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(46, 46, 46)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jtfDataDiaSemana, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel10))
+                .addContainerGap(232, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Datas", jPanel3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 394, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 274, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jtfDataInicialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfDataInicialActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfDataInicialActionPerformed
+
+    private void jtfDataFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfDataFinalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfDataFinalActionPerformed
+
+    private void jtfDataDiferencaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfDataDiferencaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfDataDiferencaActionPerformed
+
+    private void jtfDataDiaSemanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtfDataDiaSemanaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtfDataDiaSemanaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextField jtfAno;
+    private javax.swing.JTextField jtfDataDiaSemana;
+    private javax.swing.JTextField jtfDataDiferenca;
+    private javax.swing.JTextField jtfDataFinal;
+    private javax.swing.JTextField jtfDataInicial;
+    private javax.swing.JTextField jtfDia;
+    private javax.swing.JTextField jtfHora;
+    private javax.swing.JTextField jtfMes;
+    private javax.swing.JTextField jtfMilessegundo;
+    private javax.swing.JTextField jtfMinuto;
+    private javax.swing.JTextField jtfSegundo;
+    private javax.swing.JTextField jtfSemana;
     // End of variables declaration//GEN-END:variables
 }
