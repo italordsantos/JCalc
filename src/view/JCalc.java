@@ -5,6 +5,7 @@
  */
 package view;
 
+import control.ControleJInternalFrame;
 import view.jinternalframe.calculator.SimpleCalculator;
 
 /**
@@ -13,6 +14,7 @@ import view.jinternalframe.calculator.SimpleCalculator;
  */
 public class JCalc extends javax.swing.JFrame {
 
+    ControleJInternalFrame c = new ControleJInternalFrame();
     /**
      * Creates new form JCalc
      */
@@ -96,6 +98,11 @@ public class JCalc extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButton4.setText("Tempo");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jpConversorLayout = new javax.swing.GroupLayout(jpConversor);
         jpConversor.setLayout(jpConversorLayout);
@@ -221,8 +228,13 @@ public class JCalc extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jDesktopPane1.add(new SimpleCalculator()).setVisible(true);
+        jDesktopPane1.add(c.getSimpleCalculator()).setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        jDesktopPane1.add(c.getConvertTime()).setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
